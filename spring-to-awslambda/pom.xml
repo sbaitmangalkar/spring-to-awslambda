@@ -94,7 +94,7 @@
 				</configuration>
 			</plugin>
 			<!-- START: Maven Shade plugin -->
-			<!-- <plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
 				<configuration>
@@ -108,7 +108,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin>
 			<!--END: Maven Shade plugin -->
 		</plugins>
 	</build>

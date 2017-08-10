@@ -6,6 +6,12 @@ import org.springframework.stereotype.Component;
 
 import com.service.order.model.Order;
 
+/**
+ * DataSource implementation
+ * 
+ * @author Shyam | catch.shyambaitmangalkar@gmail.com
+ *
+ */
 @Component
 public class OrderDataSourceImpl implements OrderDataSource {
 	private List<Order> orders = OrderData.getOrderData();

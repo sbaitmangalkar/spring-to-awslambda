@@ -1,25 +1,37 @@
 package com.service.order.model;
 
+/**
+ * Simple POJO representing an Order
+ * 
+ * @author Shyam | catch.shyambaitmangalkar@gmail.com
+ *
+ */
 public class Order {
 	private long id;
-	private String name;
-	
-	public Order(long id, String name) {
+	private String orderItem;
+	private String customerName;
+
+	public Order(long id, String orderItem, String customerName) {
 		this.id = id;
-		this.name = name;
+		this.orderItem = orderItem;
+		this.customerName = customerName;
 	}
-	
+
 	public long getId() {
 		return id;
 	}
-	
-	public String getName() {
-		return name;
+
+	public String getOrderItem() {
+		return orderItem;
+	}
+
+	public String getCustomerName() {
+		return customerName;
 	}
 
 	@Override
 	public String toString() {
-		return "Order [id=" + id + ", name=" + name + "]";
+		return "Order [id=" + id + ", orderItem=" + orderItem + ", customerName=" + customerName + "]";
 	}
 
 }
